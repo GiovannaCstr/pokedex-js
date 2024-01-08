@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="./assets/img/pokebola.png" />
     <title>Pokedex</title>
 
+    <!--Ícones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!--Normalize CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
@@ -24,8 +27,16 @@
 <body>
     <section class="content">
             <div class="divTitle">
-                <img src="./assets/img/pokebola.png"/>
-                <h1>Pokedex</h1>
+                <div class="divElementsHeader">
+                    <img src="./assets/img/pokebola.png"/>
+                    <h1>Pokedex</h1>
+                </div>
+                <div class="divElementsHeader">
+                    <input id="inputSearch" type="text" placeholder="Search for name...">
+                    <button id="buttonSearch" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
             </div>
             <ol id="pokemonList" class="pokemons"></ol>
             <div class="pagination">
